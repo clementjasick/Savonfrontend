@@ -1,19 +1,24 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
-import { MesRecettesComponent } from './pages/mes-recettes/mes-recettes.component';
-import { UtilisateursComponent } from './pages/utilisateurs/utilisateurs.component';
-import { IngredientsComponent } from './pages/ingredients/ingredients.component';
-import { CalculateurComponent } from './pages/calculateur/calculateur.component';
 import { HttpClientModule } from '@angular/common/http';
-
-
+import { RecipeCalculatorPageComponent } from './pages/recipe-calculator-page/recipe-calculator-page.component';
+import { RecipeManagerPageComponent } from './pages/recipe-manager-page/recipe-manager-page.component';
+import { IngredientCreateComponent } from './pages/ingredient-create/ingredient-create.component';
+import { FormsModule } from '@angular/forms';
+import { RadarChartComponent } from './components/radar-chart/radar-chart.component';
+import { RecetteIndexComponent } from './pages/recette-index/recette-index.component';
+import { RecetteCreateComponent } from './pages/recette-create/mes-recettes.component';
+import { IngredientListComponent } from './shared/ingredient-list/ingredient-list.component';
+import { IngredientFormComponent } from './shared/ingredient-form/ingredient-form.component';
+import { IngredientImportExportComponent } from './shared/ingredient-import-export/ingredient-import-export.component';
+import { IngredientManagerPageComponent } from './pages/ingredient-manager-page/ingredient-manager-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,11 +26,17 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     HomeComponent,
     PrivacyPolicyComponent,
-    MesRecettesComponent,
-    UtilisateursComponent,
-    IngredientsComponent,
-    CalculateurComponent,
-    
+
+    RecipeCalculatorPageComponent,
+    RecipeManagerPageComponent,
+    IngredientCreateComponent,
+    RadarChartComponent,
+    RecetteIndexComponent,
+    RecetteCreateComponent,
+    IngredientListComponent,
+    IngredientFormComponent,
+    IngredientImportExportComponent,
+    IngredientManagerPageComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +44,9 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    provideClientHydration()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

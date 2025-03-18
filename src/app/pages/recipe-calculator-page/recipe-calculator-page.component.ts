@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { Ingredient } from '../../models/Ingredient';
-import { IngredientService } from '../../services/ingredient.service';
+import { IngredientService } from '../../../servcies/ingredients.servcie';
 @Component({
-  selector: 'app-calculateur',
-  templateUrl: './calculateur.component.html',
-  styleUrl: './calculateur.component.css'
+  selector: 'app-recipe-calculator-page',
+  templateUrl: './recipe-calculator-page.component.html',
+  styleUrl: './recipe-calculator-page.component.css'
 })
-export class CalculateurComponent {
+export class RecipeCalculatorPageComponent {
   ingredients: Ingredient[] = []; // Liste des ingrédients de l’API
   isLoading: boolean = true; // Flag marquant la récupération des données
   errorMessage: string = ""; // Eventuel message d'erreur
