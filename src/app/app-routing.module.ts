@@ -8,12 +8,13 @@ import { RecetteIndexComponent } from './pages/recette-index/recette-index.compo
 import { UtilisateursComponent } from './pages/utilisateurs/utilisateurs.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'confidentialite', component: PrivacyPolicyComponent },
   { path: 'calculateur', component: RecipeCalculatorPageComponent},
   { path: 'ingredients', component: IngredientCreateComponent},
   { path: 'mes-recettes', component: RecetteIndexComponent},
-  { path: 'users', component: UtilisateursComponent}
+  { path: 'users', component: UtilisateursComponent},
+
 
 ];
 
