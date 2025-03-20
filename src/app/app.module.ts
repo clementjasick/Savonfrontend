@@ -14,11 +14,12 @@ import { IngredientCreateComponent } from './pages/ingredient-create/ingredient-
 import { FormsModule } from '@angular/forms';
 import { RadarChartComponent } from './components/radar-chart/radar-chart.component';
 import { RecetteIndexComponent } from './pages/recette-index/recette-index.component';
-import { RecetteCreateComponent } from './pages/recette-create/mes-recettes.component';
+import { RecetteCreateComponent } from './pages/recette-create/recette-create.component';
 import { IngredientListComponent } from './shared/ingredient-list/ingredient-list.component';
 import { IngredientFormComponent } from './shared/ingredient-form/ingredient-form.component';
 import { IngredientImportExportComponent } from './shared/ingredient-import-export/ingredient-import-export.component';
 import { IngredientManagerPageComponent } from './pages/ingredient-manager-page/ingredient-manager-page.component';
+import { UtilisateursComponent } from './pages/utilisateurs/utilisateurs.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { IngredientManagerPageComponent } from './pages/ingredient-manager-page/
     IngredientListComponent,
     IngredientFormComponent,
     IngredientImportExportComponent,
-    IngredientManagerPageComponent
+    IngredientManagerPageComponent,
+    UtilisateursComponent
   ],
   imports: [
     BrowserModule,

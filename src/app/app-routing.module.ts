@@ -5,13 +5,15 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
 import { RecipeCalculatorPageComponent } from './pages/recipe-calculator-page/recipe-calculator-page.component';
 import { IngredientCreateComponent } from './pages/ingredient-create/ingredient-create.component';
 import { RecetteIndexComponent } from './pages/recette-index/recette-index.component';
+import { UtilisateursComponent } from './pages/utilisateurs/utilisateurs.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'confidentialite', component: PrivacyPolicyComponent },
-  { path: 'calcul', component: RecipeCalculatorPageComponent},
-  { path: 'ajout-ingredient', component: IngredientCreateComponent},
-  { path: 'recette', component: RecetteIndexComponent}
+  { path: 'calculateur', component: RecipeCalculatorPageComponent},
+  { path: 'ingredients', component: IngredientCreateComponent},
+  { path: 'mes-recettes', component: RecetteIndexComponent},
+  { path: 'users', component: UtilisateursComponent}
 
 ];
 
