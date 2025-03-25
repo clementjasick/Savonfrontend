@@ -38,7 +38,7 @@ export class IngredientCreateComponent implements OnInit {
 
   onSubmit(): void {
     // Soumettre le formulaire et ajouter un nouvel ingrédient
-    this.ingredientService.postIngredient(this.ingredient).subscribe({
+    this.ingredientService.addIngredient(this.ingredient).subscribe({
       next: (savedIngredient) => {
         console.log("Un ingrédient a été ajouté : " + savedIngredient);
         alert("Ingrédient créé avec succès.");

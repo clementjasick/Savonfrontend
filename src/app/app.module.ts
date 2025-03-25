@@ -20,6 +20,8 @@ import { IngredientFormComponent } from './shared/ingredient-form/ingredient-for
 import { IngredientImportExportComponent } from './shared/ingredient-import-export/ingredient-import-export.component';
 import { IngredientManagerPageComponent } from './pages/ingredient-manager-page/ingredient-manager-page.component';
 import { UtilisateursComponent } from './pages/utilisateurs/utilisateurs.component';
+import { ModalBoxConfirmationComponent } from './shared/modal-box-confirmation/modal-box-confirmation.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,13 +40,15 @@ import { UtilisateursComponent } from './pages/utilisateurs/utilisateurs.compone
     IngredientFormComponent,
     IngredientImportExportComponent,
     IngredientManagerPageComponent,
-    UtilisateursComponent
+    UtilisateursComponent,
+    ModalBoxConfirmationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [
     provideClientHydration()

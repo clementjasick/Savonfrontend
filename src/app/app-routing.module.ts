@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'confidentialite', component: PrivacyPolicyComponent },
   { path: 'calculateur', component: RecipeCalculatorPageComponent},
-  { path: 'ingredients', component: IngredientCreateComponent},
+  { path: 'ingredients', component: IngredientManagerPageComponent},
   { path: 'mes-recettes', component: RecetteIndexComponent},
   { path: 'users', component: UtilisateursComponent},
 

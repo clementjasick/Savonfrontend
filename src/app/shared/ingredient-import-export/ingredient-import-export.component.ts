@@ -72,7 +72,7 @@ sechage: parseFloat(sechage),
 estCorpsGras: estCorpsGras.trim().toLowerCase() === "true",
 ligneIngredients: []
 };
-this.ingredientService.postIngredient(newIngredient).subscribe({
+this.ingredientService.addIngredient(newIngredient).subscribe({
 next: () => {
 this.importComplete.emit(); // Notifie le parent pour rafraîchir la liste
 this.error = false;
