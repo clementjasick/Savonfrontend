@@ -1,5 +1,9 @@
-.chart-container {
-    max-width: 500px;
-    margin: auto;
+.radar-wrapper {
+  width: 100%;
+  padding: 1rem;
   }
-  
+  canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  }

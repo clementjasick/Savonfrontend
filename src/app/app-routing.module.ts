@@ -6,6 +6,7 @@ import { RecipeCalculatorPageComponent } from './pages/recipe-calculator-page/re
 import { IngredientCreateComponent } from './pages/ingredient-create/ingredient-create.component';
 import { RecetteIndexComponent } from './pages/recette-index/recette-index.component';
 import { UtilisateursComponent } from './pages/utilisateurs/utilisateurs.component';
+import { IngredientManagerPageComponent } from './pages/ingredient-manager-page/ingredient-manager-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
