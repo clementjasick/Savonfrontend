@@ -36,7 +36,7 @@ export class RecetteService {
      * @param recette - L'objet Recette à enregistrer.
      * @returns Un Observable contenant la recette enregistrée.
      */
-    addRecette(recette: Recette): Observable<RecetteDTO> {
+    addRecette(recette: RecetteDTO): Observable<Recette> {
       return this.http.post<Recette>(`${this.apiUrl}/recette`, recette);
     }
   
@@ -46,7 +46,7 @@ export class RecetteService {
      * @param recette - L'objet Recette mis à jour.
      * @returns Un Observable contenant la recette mise à jour.
      */
-    updateRecette(id: number, recette: Recette): Observable<RecetteDTO> {
+    updateRecette(id: number, recette: RecetteDTO): Observable<Recette> {
       return this.http.put<Recette>(`${this.apiUrl}/recette/${id}`, recette);
     }
   

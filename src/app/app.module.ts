@@ -22,6 +22,7 @@ import { IngredientManagerPageComponent } from './pages/ingredient-manager-page/
 import { UtilisateursComponent } from './pages/utilisateurs/utilisateurs.component';
 import { ModalBoxConfirmationComponent } from './shared/modal-box-confirmation/modal-box-confirmation.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModalIngredientPickerComponent } from './shared/modal-ingredient-picker/modal-ingredient-picker.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     IngredientImportExportComponent,
     IngredientManagerPageComponent,
     UtilisateursComponent,
-    ModalBoxConfirmationComponent
+    ModalBoxConfirmationComponent,
+    ModalIngredientPickerComponent
   ],
   imports: [
     BrowserModule,
