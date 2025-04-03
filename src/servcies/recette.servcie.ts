@@ -59,10 +59,10 @@ export class RecetteService {
       return this.http.delete<void>(`${this.apiUrl}/recette/${id}`);
     }
     /**
- * Supprime toutes les recettes.
- * @returns Un Observable vide.
- */
-deleteAllRecettes(): Observable<void> {
-  return this.http.delete<void>(`${this.apiUrl}/recette/all`);
-}
+    * Supprime toutes les recettes.
+    * @returns Un Observable vide.
+    */
+    deleteAllRecettes(): Observable<void> {
+      return this.http.delete<void>(`${this.apiUrl}/recette/all`);
+    }
   }
