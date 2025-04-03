@@ -1,5 +1,18 @@
 <div class="container mt-4">
-  <h2>Gestion de mes recettes</h2>
+    <h2>Gestion de mes recettes</h2>
+    
+    <!-- Affichage de l'indice INS moyen -->
+    <div *ngIf="!isLoading && recettes.length > 0" class="alert alert-info">
+      <strong>Indice INS moyen:</strong> {{ indiceINSMoyen.toFixed(2) }}
+    </div>
+    <br>
+    <div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center">
+    <h2>Gestion de mes recettes</h2>
+    <button class="btn btn-danger" (click)="deleteAllRecettes()" *ngIf="recettes.length > 0">
+      <i class="bi bi-trash-fill me-1"></i>Supprimer toutes les recettes
+    </button>
+  </div>
 
   <!-- Message de chargement -->
   <div *ngIf="isLoading" class="alert alert-info">
